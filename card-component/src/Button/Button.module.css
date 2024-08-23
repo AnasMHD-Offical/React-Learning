@@ -1,0 +1,22 @@
+.btn{
+    outline: none;
+    border: 1px solid ;
+    border-radius: 30px;
+   
+  
+    padding: 15px;
+  
+    cursor: pointer;
+    
+    color: aliceblue;
+    background-color: rgb(0, 64, 255);
+  
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 600;
+  }
+.btn:hover{
+    box-shadow: 4px 3px 1px aliceblue;
+    transform: translateX(-2px) translateY(-2px);
+    transition: .2s all ease;
+  }
