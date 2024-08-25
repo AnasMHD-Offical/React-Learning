@@ -1,0 +1,71 @@
+:root{
+  margin: 0;
+  padding: 0;
+
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+body{
+  background-color: #eee7e7;
+}
+.ColorPicker-container{
+  width: 390px;
+  padding: 14px;
+/*   
+  border: 1px solid;  */
+  border-radius: 14px;
+  box-shadow: 0px 0px 3px black;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #fff;
+
+}
+.ColorPicker-H1{
+  font-size: 3rem;
+  filter: drop-shadow(0px 0px 2px #c7aeae );
+}
+.Color-display{
+  width: 270px;
+  height: 270px;
+  
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+
+  /* border: 1px solid; */
+  border-radius: 14px;
+  filter: drop-shadow(0px 0px 2px #6d6666 );
+}
+.Color-text{
+  margin-top: 25px;
+  font-size: 1rem;
+  filter: drop-shadow( 0px -.3px 1px #f7f7f7 );
+}
+.ColorSelect-label{
+  margin-top: 17px;
+}
+
+.ColorSelector{
+  border-radius: 12px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 4em;
+  padding: 0;
+  width: 12em;
+  
+}
