@@ -1,0 +1,46 @@
+
+.nav{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+
+
+    justify-content: space-around;
+
+    height: 72px;
+
+}
+.brand{
+    padding:.5rem;
+    /* margin-left: 85px; */
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+.brand-logo{
+    width: 76px;
+    height: 41px;
+    
+}
+.nav-elements{
+
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-link{
+    cursor: pointer;
+}
+.Login-btn{
+    padding: .5rem 1rem; 
+    font-size: 1rem;
+
+    border: none;
+    background-color: #D01C28;
+    color: #fff;
+    border-radius: .25rem;
+
+    cursor: pointer;
+}

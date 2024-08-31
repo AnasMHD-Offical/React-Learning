@@ -1,0 +1,63 @@
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+
+  background-color: cornsilk;
+}
+
+.stopwatch{
+  border: 1px solid;
+  padding: 2em 3em 1.5rem 3rem;
+  width: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 1rem;
+
+  box-shadow: 0px 0px 10px rgb(57, 94, 71);
+
+  background-color: black;
+
+}
+.display{
+  /* border: 1px solid; */
+  font-size: 3rem;
+  padding: .2rem;
+
+  border-radius: .5rem;
+  box-shadow: 0px 0px 10px #6DC5D1;
+
+  background-color: azure;
+}
+.controls{
+  /* border: 1px solid; */
+  padding: .2rem;
+  display: flex;
+  gap: .4rem;
+  margin-top: .41rem;
+  
+}
+.Reset-btn ,.Stop-btn ,.Start-btn{
+  padding: .5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: .3rem;
+  box-shadow: 0px 0px 4px whitesmoke;
+}
+.Reset-btn{
+  background-color: #6DC5D1;
+}
+.Stop-btn{
+  
+  background-color: red;
+}
+.Start-btn{
+  background-color: greenyellow;
+}

@@ -1,0 +1,294 @@
+:root{
+  margin: 0;
+  padding: 0;
+
+  font-family: "Concert One", sans-serif;
+
+  --bg-color : #EDF6F7;
+  --bg-container : #BAE7EC;
+  --text-color : #101314;
+  --sec-text-color : #0C4854; 
+  --third-color: #323537;
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+
+}
+
+.Todo-list{
+  
+  width: 30em;
+  
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  background-color: var(--bg-container);
+
+  border: none;
+  box-shadow: 0px 0px 3px var(--sec-text-color);
+  border-radius: 1em;
+
+
+}
+.Todo-h1{
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--sec-text-color);
+  filter: drop-shadow(0px 0px 1.3px #323537 );
+  color: var(text-color);
+}
+.Todo-input-container{
+  width: 26rem;
+  display: flex;
+  justify-content: center;
+  gap: .7em;
+}
+.Todo-input-box{
+  border: none;
+  width: 15em;
+  padding: .6em;
+  
+  background-color: var(--bg-color);
+  
+  box-shadow: 0px 0px 2px var(--bg-container);
+  border-radius: .5rem;
+  
+  font-size: 1.3rem;
+  font-family: "Concert One", sans-serif;
+  font-weight: 500;
+  color: var(--text-color);
+
+  transition: .5s all ease;
+}
+.Todo-input-box:focus{
+  outline: none;
+  box-shadow: 0px 0px 3px var(--sec-text-color);
+  border: none;
+}
+.Todo-add-btn{
+  width: 4.3em;
+
+  border: none;
+  outline: none;
+
+  padding: .1rem;
+  border-radius: .5rem;
+
+  font-size: 1.5rem;
+  font-family: "Concert One", sans-serif;
+  font-weight: 500;
+
+  background-color: var(--sec-text-color);
+  color: var(--bg-color);
+
+  box-shadow: 0px 0px 3px var(--sec-text-color);
+}
+
+.task-list{
+  width: 25em;
+  list-style: none; 
+  padding: 0;
+  padding-right: 10px;
+}
+.task-link{
+  width: 25em;
+
+  padding: .5rem;
+  /* border: 1px solid; */
+
+  border-radius: .5em;
+
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  transition: .1s all ease;
+  box-shadow: 0px 0px 3px var(--sec-text-color);
+
+
+}
+.task-link:hover{
+  box-shadow: 0px 0px 6px var(--sec-text-color);
+  cursor: pointer;
+}
+.task-link span{
+  font-size: 1.2rem;
+  /* color: var(--third-color); */
+  color: var(--sec-text-color);
+}
+.list-btn{
+  padding: .2rem;
+  display: flex;
+  gap: .2rem;
+}
+.delete-task{
+  display: flex;
+  align-items: center;
+  border-radius: .4rem;
+  padding: .3rem;
+  background-color: #0C4854;
+  color: #BAE7EC;
+  border:none;
+  cursor: pointer;
+}
+
+.edit-task{
+  display: flex;
+  align-items: center;
+  border-radius: .4rem;
+
+  background-color: #0C4854;
+  color: #BAE7EC;
+  border:none;
+
+  cursor: pointer;
+}
+
+.moveUp-task{
+  display: flex;
+  align-items: center;
+  border-radius: .4rem;
+
+  background-color: #0C4854;
+  color: #BAE7EC;
+  border:none;
+
+  cursor: pointer;
+}
+.moveDown-task{
+  display: flex;
+  align-items: center;
+  border-radius: .4rem;
+
+  background-color: #0C4854;
+  color: #BAE7EC;
+  border:none;
+
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+  .Todo-list{
+    width: 25em;
+  }
+  .Todo-h1{
+    font-size: 2.4rem;
+  }
+  
+  .Todo-input-container{
+    width: 21em;
+  }
+  .Todo-input-box{
+    font-size: 1.2rem;
+  }
+  .task-list{
+    width: 20em;
+  }
+  .task-link{
+    width: 20em;
+
+  }
+  .task-link span{
+    font-size: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  .Todo-list{
+    width: 22em;
+  }
+  .Todo-h1{
+    font-size: 2rem;
+  }
+  
+  .Todo-input-container{
+    width: 18em;
+  }
+  .Todo-input-box{
+    font-size: 1rem;
+  }
+  .task-list{
+    width: 18em;
+  }
+  .task-link{
+    width: 17em;
+
+  }
+  .task-link span{
+    font-size: .8rem;
+  }
+  .list-btn{
+    gap: .1rem;
+    padding: .14rem;
+  }
+  .delete-task{
+    padding: .16rem;
+  }
+  .edit-task{
+    padding: .16rem;
+  }
+  .moveDown-task{
+    padding: .16rem;
+  }
+  .moveUp-task{
+    padding: .16rem;
+  }
+
+  
+}
+@media screen and (max-width: 360px) {
+  .Todo-list{
+    width: 18em;
+  }
+  .Todo-h1{
+    font-size: 1.6rem;
+  }
+  
+  .Todo-input-container{
+    width: 16em;
+  }
+  .Todo-add-btn{
+    width: 3.4rem;
+    font-size: 1rem;
+  }
+  .Todo-input-box{
+    font-size: .9rem;
+  }
+  .task-list{
+    width: 16em;
+  }
+  .task-link{
+    width: 15em;
+
+  }
+  .task-link span{
+    font-size: .7rem;
+  }
+  .list-btn{
+    gap: .18rem;
+    padding: .10rem;
+  }
+  .delete-task{
+    padding: .10rem;
+  }
+  .edit-task{
+    padding: .10rem;
+  }
+  .moveDown-task{
+    padding: .10rem;
+  }
+  .moveUp-task{
+    padding: .10rem;
+  }
+
+  
+}
